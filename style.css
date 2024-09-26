@@ -4,9 +4,9 @@ body {
     background-repeat: no-repeat;
     max-height: 100vh;
 }
-.password {
-    display: inline-flex;
-    justify-content: space-around;
+a {
+    text-decoration: none;
+    color: rgba(0,0,0, 0.8);
 }
 input::placeholder {
     color: rgba(0, 0, 0, 0.5);
@@ -14,6 +14,7 @@ input::placeholder {
 }
 form {
     /* margin-top: 50px; */
+    margin-bottom: 225px;
 }
 .content {
     height: 550px;
@@ -31,12 +32,6 @@ form {
     font-size: xx-large;
     color: #F47458;
 }
-#welcome {
-    margin-top: 20px;
-    font-size: medium;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.5);
-}
 #sign-in {
     margin-top: 0px;
     font: bold;
@@ -49,13 +44,12 @@ form {
 }
 input {
     background-color: #FFF6F4;
-    padding: 12px ;
+    padding: 16px ;
     border: none;
     border-radius: 4px;
 }
 .input-parameter {
     margin-top: 8px;
-
 }
 .btn-class {
     margin-top: 24px;
@@ -63,17 +57,24 @@ input {
     align-items: center;
     justify-content: center;
 }
-
 .btn {
     color: white;
-    font-size: large;
+    font-size:larger;
     font-weight: 700;
     background-color: #F47458;
     cursor:pointer;
-    padding: 12px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 20px;
 }
 .forgot-pass {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: -8px;
+    gap: 4px;
 }
+#sign-up {
+    font-weight: 500;
+}
+
