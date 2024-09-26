@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section>
-        <div class="container">
-            <form action=" ">
-                <div class="content">
-                    <div class="inner-content">
-                        <h3 id="logo">Login Store</h3>
-                        <h3 id="sign-in">Sign In</h3>
-                        <div class="input-details">
-                            <p class="input-parameter">Email</p>
-                            <input type="email" placeholder="demo@gmail.com">
-                            <div class="forgot-pass">
-                                <p class="input-parameter">password</p>
-                                <p><a href="">forgot password</a></p>
-                            </div>
-                            <input type="password" placeholder="********">
-                        </div>
-                        <div class="btn-class">
-                            <button class="btn">Sign In</button>
-                        </div>
-                        <div class="forgot-pass">
-                            <p>I don't have an account?</p>
-                            <p id="sign-up"><a href="">Sign up</a></p>
-                        </div>
-                    </div>
-                </div>
-            </form>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content" id="sign-form">
+        <div class="inner-content">
+          <h3 id="logo">Login Store</h3>
+          <h3 id="sign-in">Sign In</h3>
+          <div class="input-details">
+            <p class="input-parameter">Email</p>
+            <input type="email" placeholder="demo@gmail.com" />
+            <div class="forgot-pass">
+              <p class="input-parameter">password</p>
+              <p><a onclick="alert('a recovery email has been sent to your account')" href="">forgot password</a></p>
+            </div>
+            <input type="password" placeholder="********" />
+          </div>
+          <div class="btn-class">
+            <button class="btn" onclick="showSign()" id="btn-sign">Sign In</button>
+          </div>
+          <div class="forgot-pass">
+            <p>I don't have an account?</p>
+            <p id="sign-up"><a onclick="signUp()" href="">Sign up</a></p>
+          </div>
         </div>
-    </section>
-</body>
+      </div>
+      <!-- Response After signIn-->
+      <div class="signin-response" id="response">
+        <p>You have successfully signed in</p>
+      </div>
+      <!-- Sign up Form-->
+       <div class="signup-content" id="signup-form">
+            <div class="inner-content">
+                <h3 id="logo">Login Store</h3>
+                <h3 id="sign-in">Sign Up</h3>
+                <div class="input-details">
+                    <p class="input-parameter">Name</p>
+                    <input type="text" placeholder="Enter Your Name" id="">
+                    <p class="input-parameter">Email</p>
+                    <input type="email" placeholder="demo@gmail.com" />
+                    <p class="input-parameter">password</p>
+                    <input type="password" placeholder="Enter your password">
+                    <p class="input-parameter">Confirm password</p>
+                    <input type="password" placeholder="Confirm your Password">                
+                </div>
+                <div class="btn-class">
+                    <button class="btn" id="btn-signup">Sign Up</button>
+                </div>
+            </div>
+       </div>
+
+    </div>
+    <script>
+        function showSign() {
+            let signButton = document.getElementById('sign-form');
+            let sign = document.getElementById('response');
+            sign.style.display = 'block';
+            
+        }
+        function signUp() {
+            let signupForm = document.getElementsByid('signup-form');
+            signupForm.style.display = 'block';
+        }
+    </script>
+  </body>
 </html>

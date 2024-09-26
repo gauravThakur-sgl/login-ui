@@ -1,9 +1,10 @@
 body {
     font-family: 'Roboto',sans-serif;
-    background: linear-gradient(90deg, white 60%, #FFCEAE 30%);
-    background-repeat: no-repeat;
-    overflow: hidden;
-    /* max-height: 100vh; */
+    background-color: white
+    /* background: linear-gradient(90deg, white 60%, #FFCEAE 30%); */
+    /* background-repeat: no-repeat; */
+    /* overflow: hidden; */
+    /* height: 100%; */
 }
 a {
     text-decoration: none;
@@ -13,21 +14,19 @@ input::placeholder {
     color: rgba(0, 0, 0, 0.5);
     font-size: medium;
 }
-form {
-    /* margin-top: 50px; */
-    margin-bottom: 225px;
-}
 .content {
     height: 550px;
     width: 500px;
-    margin-top: 150px;
-    margin-left: 200px;
+    /* margin-top: 150px;
+    margin-left: 200px; */
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);;
     /* border: 1px solid whitesmoke; */
     border-radius: 10px;
+    /* display: block; */
 }
 .inner-content {
     padding: 10px 50px;
+    
 }
 #logo {
     font-size: xx-large;
@@ -79,4 +78,36 @@ input {
 #sign-up {
     font-weight: 500;
 }
+.container {
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-response {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 16px;
+    display: none;
+}
+
+.signup-content {
+    height: 620px;
+    width: 500px;
+    /* margin-top: 150px;
+    margin-left: 200px; */
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);;
+    /* border: 1px solid whitesmoke; */
+    border-radius: 10px;
+    display: none;
+}
+
+
+
+
 
